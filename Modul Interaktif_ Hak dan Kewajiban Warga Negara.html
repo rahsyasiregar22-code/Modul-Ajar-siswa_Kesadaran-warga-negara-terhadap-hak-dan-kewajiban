@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hak dan Kewajiban Warga Negara – Modul Belajar Interaktif</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fc;--card:#fff;--ink:#14213d;--mut:#51607a;--navy:#14213d;--blue:#2457c5;--sky:#dcebff;--teal:#0f9d94;--tealbg:#d9f4f1;--yel:#ffc940;--yelbg:#fff3cc;--org:#f2761f;--orgbg:#ffe6d2;--pur:#6f56c9;--purbg:#ece7ff;--line:#d6deec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1526;--card:#172038;--ink:#eaf0ff;--mut:#9fb0d0;--sky:#1b2d52;--tealbg:#0f3030;--yelbg:#3a3010;--orgbg:#3a2412;--purbg:#2a2450;--line:#2b3a5e}}
+:root[data-theme="dark"]{--bg:#0e1526;--card:#172038;--ink:#eaf0ff;--mut:#9fb0d0;--sky:#1b2d52;--tealbg:#0f3030;--yelbg:#3a3010;--orgbg:#3a2412;--purbg:#2a2450;--line:#2b3a5e}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Nunito,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:0 0 .5em}
+h2{font-size:1.7rem}h3{font-size:1.2rem}
+p{margin:.4em 0 .8em;max-width:68ch}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);color:#fff;display:flex;gap:4px;overflow-x:auto;padding:0 10px}
+nav a{color:#cfe0ff;text-decoration:none;padding:14px 12px;white-space:nowrap;font-weight:600;font-size:.9rem}
+nav a:hover,nav a:focus-visible{color:#fff;background:#ffffff1a;outline:none}
+#bar{position:sticky;top:calc(48px + env(safe-area-inset-top,0px));height:4px;background:var(--yel);width:0;z-index:9}
+main{max-width:920px;margin:0 auto;padding:0 18px 60px}
+section{padding:46px 0 10px}
+.hero{background:linear-gradient(135deg,#14213d 55%,#2457c5);color:#fff;padding:54px 22px 46px}
+.hero .in{max-width:920px;margin:auto}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);font-weight:900}
+.chip{display:inline-block;background:var(--yel);color:#14213d;border-radius:99px;padding:3px 14px;font-weight:800;font-size:.85rem;margin:0 8px 8px 0}
+.hero p{color:#d6e4ff}
+.pillars{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.pillars span{background:#ffffff1f;border:1px solid #ffffff40;border-radius:12px;padding:8px 14px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:14px 0}
+.box{border-radius:14px;padding:14px 18px;margin:14px 0;border-left:6px solid}
+.hook{background:var(--yelbg);border-color:var(--yel)}.real{background:var(--tealbg);border-color:var(--teal)}
+.think{background:var(--purbg);border-color:var(--pur)}.warn{background:var(--orgbg);border-color:var(--org)}
+.box b.t{display:block;margin-bottom:2px}
+ol.goals{padding-left:22px}ol.goals li{margin:6px 0}
+.tag{font-size:.75rem;font-weight:800;border-radius:6px;padding:1px 8px;margin-right:6px}
+.lots{background:var(--sky);color:var(--blue)}.mots{background:var(--tealbg);color:var(--teal)}.hots{background:var(--orgbg);color:var(--org)}
+.map{display:grid;gap:10px}
+.map .root{background:var(--org);color:#fff;font-weight:800;text-align:center;border-radius:14px;padding:14px}
+.map .arrow{text-align:center;color:var(--mut);font-size:.85rem}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.br{background:var(--sky);border-radius:14px;padding:12px}
+.br h4{margin:0 0 6px;color:var(--blue);font-size:1rem}
+.br div{background:var(--card);border-radius:8px;padding:6px 10px;margin:5px 0;font-size:.92rem;border:1px solid var(--line)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+button{font:inherit;cursor:pointer}
+.tabs button{border:2px solid var(--blue);background:var(--card);color:var(--blue);border-radius:10px;padding:6px 14px;font-weight:700}
+.tabs button[aria-selected=true]{background:var(--blue);color:#fff}
+button:focus-visible,summary:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;min-height:96px}
+.panel li{margin:4px 0}
+.btn{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:8px 16px;font-weight:700}
+.btn.alt{background:var(--card);color:var(--blue);border:2px solid var(--blue)}
+.reveal{display:none;margin-top:10px}.reveal.on{display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.hak{background:var(--sky);border-radius:12px;padding:10px 14px}.kew{background:var(--yelbg);border-radius:12px;padding:10px 14px}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:9px 14px;margin:6px 0}
+.opt:hover{border-color:var(--blue)}.opt.ok{border-color:var(--teal);background:var(--tealbg)}.opt.no{border-color:var(--org);background:var(--orgbg)}
+.fb{margin-top:8px;font-size:.95rem;color:var(--mut)}
+select,textarea{font:inherit;width:100%;padding:8px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;margin:8px 0}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.tk{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.tk div{flex:1 1 200px;background:var(--navy);color:#fff;border-radius:14px;padding:12px 16px}
+.tk div b{color:var(--yel)}
+dl{margin:0}dt{font-weight:800;color:var(--blue)}dd{margin:0 0 10px}
+.score{font-weight:800;color:var(--teal)}
+footer{background:var(--navy);color:#cfe0ff;padding:24px;text-align:center;font-size:.9rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<nav aria-label="Navigasi modul"><a href="#kenapa">Mulai</a><a href="#peta">Peta Konsep</a><a href="#a">A. Hak &amp; Kewajiban</a><a href="#kasus">Bedah Kasus</a><a href="#b">B. Kampanye</a><a href="#c">C. Pencegahan</a><a href="#cek">Cek Paham</a><a href="#akhir">Rangkuman</a></nav>
+<div id="bar"></div>
+
+<header class="hero"><div class="in">
+<span class="chip">Pendidikan Pancasila</span><span class="chip">Fase F · Bab III</span>
+<h1>Kesadaran Warga Negara terhadap Hak dan Kewajiban</h1>
+<p>Modul belajar interaktif berbasis UUD NRI Tahun 1945: kenali pelanggaran hak, kenali pengingkaran kewajiban, lalu rancang aksi nyatamu.</p>
+<div class="pillars"><span>⚖️ Hak</span><span>🤝 Kewajiban</span><span>🔎 Kasus</span><span>📣 Kampanye</span></div>
+</div></header>
+
+<main>
+<section id="kenapa">
+<h2>Kenapa kita belajar ini?</h2>
+<p>Setiap warga negara punya hak yang harus dihormati orang lain, dan kewajiban yang harus dijalankan demi kebaikan bersama. Kesadaran inilah yang membuat kita saling menghargai dan saling mendukung.</p>
+<div class="box real"><b class="t">🌎 Connect to real life</b>Kamu bisa ikut menyelenggarakan seminar tentang kesadaran hak dan kewajiban di lingkunganmu, atau membuat kampanye kreatif bertema hak dan kewajiban. Di dunia kerja, hak dan kewajiban muncul di mana-mana, misalnya soal diskriminasi di tempat kerja dan kewajiban membayar pajak.</div>
+<div class="box hook"><b class="t">🔎 Tahukah kamu?</b>Saat pandemi Covid-19, banyak anak putus sekolah. Menurut materi ini, itu bukan hanya soal sekolah, tetapi pelanggaran hak pendidikan yang bertentangan dengan UUD NRI Tahun 1945.</div>
+
+<h3>Tujuan pembelajaran</h3>
+<ol class="goals">
+<li>Mengidentifikasi pelanggaran hak dan pengingkaran kewajiban.</li>
+<li>Menganalisis contoh kasus pelanggaran hak dan pengingkaran kewajiban.</li>
+<li>Menjelaskan pengertian hak dan kewajiban warga negara.</li>
+<li>Menginisiasi upaya pencegahan pelanggaran hak dan pengingkaran kewajiban.</li>
+<li>Mengusulkan ide kreatif kampanye anti pengingkaran kewajiban warga negara.</li>
+<li>Bekerja sama secara kompak saat mengerjakan <i>exploration</i> dan <i>project</i>.</li>
+</ol>
+</section>
+
+<section id="peta">
+<h2>Peta konsep</h2>
+<div class="map">
+<div class="root">Kesadaran Warga Negara terhadap Hak dan Kewajiban</div>
+<div class="arrow">▼ dipelajari melalui ▼</div>
+<div class="branches">
+<div class="br"><h4>A. Pelanggaran hak &amp; pengingkaran kewajiban yang bertentangan dengan UUD NRI 1945</h4><div>Hak dan kewajiban dalam UUD NRI 1945</div><div>Pengertian pelanggaran hak dan pengingkaran kewajiban</div></div>
+<div class="br"><h4>B. Menginisiasi proyek kampanye anti pelanggaran</h4><div>Implementasi penghormatan hak dan kewajiban</div><div>Nilai kemanusiaan sebagai pendukung pembangunan</div></div>
+<div class="br"><h4>C. Kasus &amp; upaya pencegahan di lingkungan sekitar</h4><div>Kasus pelanggaran hak dan pengingkaran kewajiban</div><div>Upaya mencegah pelanggaran dan pengingkaran</div></div>
+</div></div>
+</section>
+
+<section id="a">
+<h2>A. Hak dan kewajiban dalam UUD NRI Tahun 1945</h2>
+<div class="box hook"><b class="t">💭 Coba pikirkan</b>Kalau hak dan kewajiban itu dua hal yang tidak dapat dipisahkan, apa yang terjadi jika kita hanya menuntut hak?</div>
+<div class="card"><h3>Inti konsep</h3>
+<p><b>Hak warga negara</b> adalah hak dasar yang melekat sejak lahir dan disahkan oleh undang-undang, untuk melindungi harkat dan martabat manusia.</p>
+<p><b>Kewajiban warga negara</b> adalah konsekuensi dari hak yang dimiliki, untuk menjaga keharmonisan hidup bernegara.</p></div>
+<h3>Jelajahi pasalnya</h3>
+<div class="tabs" role="tablist" id="ptabs"></div>
+<div class="panel" id="ppanel" aria-live="polite"></div>
+<div class="box think"><b class="t">🧠 Challenge (LOTS)</b>Dari kelima pasal di atas, temukan minimal 8 contoh hak warga negara.
+<button class="btn alt" onclick="tg('r1',this)">Lihat contoh jawaban</button>
+<div class="reveal" id="r1"><ol><li>Hak atas pekerjaan dan penghidupan yang layak (Pasal 27 ayat 2)</li><li>Hak ikut serta dalam pembelaan negara (Pasal 27 ayat 3)</li><li>Hak untuk hidup dan mempertahankan hidup (Pasal 28A)</li><li>Hak membentuk keluarga melalui perkawinan yang sah (28B ayat 1)</li><li>Hak anak atas kelangsungan hidup, tumbuh, dan berkembang (28B ayat 2)</li><li>Hak anak atas perlindungan dari kekerasan dan diskriminasi (28B ayat 2)</li><li>Hak ikut serta dalam usaha pertahanan dan keamanan (Pasal 30)</li><li>Hak mendapat pendidikan (Pasal 31 ayat 1)</li></ol></div></div>
+
+<h3>Apa itu pelanggaran hak dan pengingkaran kewajiban?</h3>
+<div class="two">
+<div class="hak"><b>Pelanggaran hak</b><p>Tindakan perampasan atau pembatasan hak orang lain yang seharusnya dihormati dan dilindungi. Bisa dilakukan oleh warga negara sendiri hingga pemerintah. Contoh: pelanggaran hak asasi manusia, hak sipil, dan hak sosial ekonomi.</p></div>
+<div class="kew"><b>Pengingkaran kewajiban</b><p>Tindakan seseorang atau pihak tertentu yang tidak melaksanakan kewajiban yang seharusnya dilakukan.</p>
+<ul><li>Tidak taat hukum dan peraturan (melanggar lalu lintas, tidak membayar pajak)</li><li>Tidak menghormati HAM orang lain (diskriminasi, pelecehan, kekerasan)</li><li>Tidak berkontribusi dalam pembangunan (tidak memilih dalam pemilu, tidak membayar pajak, tidak terlibat kegiatan sosial)</li></ul></div></div>
+<p>Penyebabnya bisa berupa ketidaktahuan, kesengajaan, atau ketidakpedulian.</p>
+<div class="box warn"><b class="t">⚠️ Perlu verifikasi</b>Teks pada halaman pembuka menyebut pendidikan dasar "wajib dan beasiswanya", sedangkan tabel Pasal 31 ayat 2 menyebut pemerintah wajib membiayainya. Modul ini mengikuti bunyi tabel pasal; mohon cek dengan teks UUD asli.</div>
+</section>
+
+<section id="cek1">
+<h2>🎯 Quick check</h2>
+<div class="card" id="q-a"></div>
+</section>
+
+<section id="kasus">
+<h2>🔍 Bedah kasus</h2>
+<p>Pilih kasus, tebak dulu: hak siapa yang dilanggar dan kewajiban apa yang diingkari? Lalu buka analisisnya.</p>
+<div class="tabs" id="ktabs" role="tablist"></div>
+<div class="panel" id="kpanel" aria-live="polite"></div>
+<div class="box think"><b class="t">🧠 HOTS: Think–Pair–Share</b>Pilih satu kasus. <b>Think</b>: pihak mana saja yang terlibat? <b>Pair</b>: diskusikan dampaknya bagi masyarakat. <b>Share</b>: usulkan satu solusi yang mencegah kasus serupa terulang.</div>
+<div class="box hook"><b class="t">⚡ Numerasi</b>Video pada materi menyebut sekitar 5,88% dari 82 juta anak Indonesia putus sekolah sejak sebelum pandemi. Berapa jumlahnya?
+<button class="btn alt" onclick="tg('r2',this)">Cek hitunganmu</button>
+<div class="reveal" id="r2">82.000.000 × 5,88% ≈ <b>4.821.600 anak</b> (hasil hitungan modul ini). Lalu, upaya apa yang bisa menahan laju angka itu? Jawab dengan kritis.</div></div>
+<div class="box warn"><b class="t">⚠️ Perlu verifikasi</b>Kasus "unjuk rasa merusak fasilitas" dan "vandalisme taman" pada buku sama-sama mencantumkan Pasal 170 KUHP dan UU No. 22 Tahun 2009 (Lalu Lintas). Untuk kasus taman, kesesuaian UU lalu lintas perlu dicek ulang sebelum dipakai menilai.</div>
+</section>
+
+<section id="b">
+<h2>B. Menginisiasi proyek kampanye</h2>
+<h3>1. Menghormati hak dan memenuhi kewajiban</h3>
+<div class="card"><p>Salah satu kewajiban warga negara adalah <b>membayar pajak</b>. Menurut KBBI, pajak adalah pungutan wajib, biasanya berupa uang yang harus dibayar penduduk sebagai sumbangan wajib kepada negara atau pemerintah sehubungan dengan pendapatan, pemilikan, harga beli barang, dan sebagainya.</p>
+<div class="box think"><b class="t">💭 Coba pikirkan</b>Apa saja manfaat membayar pajak? Tulis tiga manfaat versimu.<textarea rows="3" aria-label="Manfaat pajak" placeholder="Tulis di sini (tidak disimpan)"></textarea></div></div>
+
+<h3>2. Nilai kemanusiaan sebagai pendukung pembangunan</h3>
+<p>Menghormati martabat, hak, dan kesejahteraan setiap individu adalah inti nilai kemanusiaan.</p>
+<details><summary>Mendorong keadilan dan kesetaraan</summary><p>Semua orang punya akses yang sama terhadap peluang dan sumber daya. Sistem tidak membedakan orang berdasarkan latar belakang, gender, agama, atau status sosial.</p></details>
+<details><summary>Melindungi hak asasi manusia</summary><p>Pembangunan tidak boleh melanggar hak asasi, seperti hak untuk hidup, pendidikan, dan kesehatan.</p></details>
+<details><summary>Meningkatkan kesejahteraan sosial</summary><p>Mendorong kepedulian dan kerja sama, serta memastikan manfaat pembangunan dinikmati semua lapisan masyarakat.</p></details>
+<details><summary>Mendukung pembangunan berkelanjutan</summary><p>Sumber daya alam dipakai secara bertanggung jawab, tanpa merusak lingkungan, agar generasi mendatang tetap terpenuhi kebutuhannya.</p></details>
+
+<h3>🛠️ Solution design: rencana kampanye</h3>
+<p>Dalam kelompok, rancang kampanye anti pengingkaran kewajiban. Contoh program dari buku: "Warga Bijak, Bangsa Kuat" (lomba video pendek tentang pengalaman menjalankan kewajiban).</p>
+<div class="two">
+<div class="card"><b>Tujuan spesifik (contoh)</b><p>Meningkatkan partisipasi aktif warga dalam melaksanakan kewajiban sebesar 20% dalam 1 tahun.</p></div>
+<div class="card"><b>Lengkapi bersama kelompok</b><p>Audiens target · Pesan utama · Media (video, poster, naskah drama). Setelah itu publikasikan, evaluasi dari umpan balik audiens, dan tulis kesimpulan.</p></div></div>
+</section>
+
+<section id="c">
+<h2>C. Mencegah pelanggaran dan pengingkaran</h2>
+<p>Pencegahan adalah tanggung jawab bersama, dimulai dari lingkungan terkecil: keluarga.</p>
+<div class="tabs" id="ctabs" role="tablist"></div>
+<div class="panel" id="cpanel" aria-live="polite"></div>
+<h3>Upaya yang lebih luas</h3>
+<ul><li>Penegakan supremasi hukum dan demokrasi</li><li>Peningkatan kualitas pelayanan publik</li><li>Kritis terhadap kebijakan yang tidak berpihak kepada rakyat kecil</li><li>Mengoptimalkan lembaga seperti KPK, Ombudsman RI, Komnas HAM, KPAI, dan Komnas Perempuan</li><li>Meningkatkan pengawasan masyarakat dan lembaga politik</li><li>Menyebarluaskan kesadaran lewat kegiatan formal maupun nonformal</li><li>Meningkatkan profesionalisme lembaga keamanan dan pertahanan negara</li></ul>
+
+<h3>⚖️ Agree or disagree?</h3>
+<div class="card" id="q-ad"></div>
+</section>
+
+<section id="cek">
+<h2>🧠 Check your understanding</h2>
+<div class="card" id="q-b"></div>
+<p class="score" id="score" aria-live="polite"></p>
+</section>
+
+<section id="akhir">
+<h2>📌 Key takeaways</h2>
+<div class="tk">
+<div><b>1.</b> Hak dan kewajiban tidak dapat dipisahkan.</div>
+<div><b>2.</b> Pelanggaran hak = merampas atau membatasi hak orang lain.</div>
+<div><b>3.</b> Pengingkaran kewajiban = tidak melaksanakan kewajiban yang seharusnya.</div>
+<div><b>4.</b> Penyebabnya: ketidaktahuan, kesengajaan, ketidakpedulian.</div>
+<div><b>5.</b> Nilai kemanusiaan menopang pembangunan yang adil dan berkelanjutan.</div>
+<div><b>6.</b> Pencegahan dimulai dari keluarga, sekolah, lalu masyarakat.</div>
+</div>
+
+<h2>🌱 Refleksi</h2>
+<div class="card">
+<p>Jawabanmu tidak dikirim ke mana pun. Simpan di catatanmu atau kumpulkan ke guru.</p>
+<label>1. Konsep yang paling saya pahami<textarea rows="2"></textarea></label><br><br>
+<label>2. Yang masih membingungkan<textarea rows="2"></textarea></label><br><br>
+<label>3. Hal baru yang saya pelajari<textarea rows="2"></textarea></label><br><br>
+<label>4. Hubungannya dengan kehidupan saya<textarea rows="2"></textarea></label><br><br>
+<label>5. Yang akan saya lakukan setelah ini<textarea rows="2"></textarea></label>
+</div>
+
+<h2>📚 Glossary</h2>
+<dl>
+<dt>Hak warga negara</dt><dd>Hak dasar yang melekat sejak lahir dan disahkan undang-undang, untuk melindungi harkat dan martabat manusia.</dd>
+<dt>Kewajiban warga negara</dt><dd>Konsekuensi dari hak yang dimiliki, untuk menjaga keharmonisan hidup bernegara.</dd>
+<dt>Pelanggaran hak</dt><dd>Perampasan atau pembatasan hak orang lain yang seharusnya dihormati.</dd>
+<dt>Pengingkaran kewajiban</dt><dd>Tidak melaksanakan kewajiban yang seharusnya dilakukan.</dd>
+<dt>Pajak</dt><dd>Pungutan wajib dari penduduk sebagai sumbangan kepada negara (KBBI).</dd>
+<dt>Golput</dt><dd>Warga yang memutuskan tidak menggunakan hak pilihnya dalam pemilu.</dd>
+<dt>DPT</dt><dd>Daftar Pemilih Tetap.</dd>
+</dl>
+
+<h2>Referensi dan catatan guru</h2>
+<p>Sumber utama: buku <i>Pendidikan Pancasila untuk Kelas XII (Fase F)</i>, Bab III, hlm. 65-85 (E-Plus), seperti pada berkas yang diunggah.</p>
+<div class="box warn"><b class="t">⚠️ Perlu verifikasi</b><ul>
+<li>Buku bertuliskan Kelas XII (Fase F). Jika modul dipakai di Kelas X, sesuaikan label fase dan capaian pembelajaran.</li>
+<li>Gambar 3.21: 3.296 korban perempuan + 1.319 korban laki-laki tidak sama dengan 4.116 kasus. Bedakan "kasus" dan "korban" saat membahas.</li>
+<li>Halaman setelah 85 (Exploration 4 dan seterusnya) tidak ada di berkas, sehingga tidak dimuat.</li></ul></div>
+</section>
+</main>
+<footer>Modul Pendidikan Pancasila · Bab III · Hak dan Kewajiban Warga Negara</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+function tg(id,b){const e=document.getElementById(id);e.classList.toggle('on');b.textContent=e.classList.contains('on')?'Sembunyikan':'Lihat jawaban'}
+function tabs(tid,pid,data,render){const t=$(tid),p=$(pid);data.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d.n;b.setAttribute('role','tab');b.onclick=()=>{[...t.children].forEach(c=>c.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');p.innerHTML=render(d)};t.appendChild(b);if(i==0)b.click()})}
+tabs('#ptabs','#ppanel',[
+{n:'Pasal 27',t:'<ol><li>Kewajiban warga negara menjunjung tinggi hukum dan pemerintahan.</li><li>Tiap warga negara berhak atas pekerjaan dan penghidupan yang layak bagi kemanusiaan.</li><li>Setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara.</li></ol>'},
+{n:'Pasal 28A',t:'Setiap orang berhak untuk hidup serta berhak mempertahankan hidup dan kehidupannya.'},
+{n:'Pasal 28B',t:'<ol><li>Setiap orang berhak membentuk keluarga dan melanjutkan keturunan melalui perkawinan yang sah.</li><li>Setiap anak berhak atas kelangsungan hidup, tumbuh, dan berkembang serta berhak atas perlindungan dari kekerasan dan diskriminasi.</li></ol>'},
+{n:'Pasal 30',t:'Tiap-tiap warga negara berhak dan wajib ikut serta dalam usaha pertahanan dan keamanan negara.'},
+{n:'Pasal 31',t:'<ol><li>Setiap warga negara berhak mendapat pendidikan.</li><li>Setiap warga negara wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya.</li></ol>'}
+],d=>'<h3>'+d.n+'</h3>'+d.t);
+tabs('#ktabs','#kpanel',[
+{n:'Parkir di guiding block',f:'Pemotor memarkir kendaraan di sepanjang blok penunjuk sehingga menghambat penyandang disabilitas tuna netra yang bergantung padanya untuk navigasi.',h:'Hak penyandang disabilitas untuk memakai fasilitas umum.',k:'Memarkir kendaraan di tempat semestinya, bukan di fasilitas untuk penyandang disabilitas.',u:'UU No. 8 Tahun 2016 tentang Penyandang Disabilitas'},
+{n:'Anak putus sekolah',f:'Anak di bawah umur putus sekolah dan bekerja untuk memenuhi kebutuhan keluarga.',h:'Hak atas pendidikan dan masa kanak-kanak yang layak.',k:'Kewajiban negara dan masyarakat melindungi serta mendukung kesejahteraan dan perkembangan anak.',u:'UU No. 35 Tahun 2014 (perubahan atas UU No. 23 Tahun 2002) tentang Perlindungan Anak'},
+{n:'Demo merusak fasilitas',f:'Unjuk rasa dilakukan dengan merusak fasilitas umum, mengganggu ketertiban dan merusak sarana bersama.',h:'Hak masyarakat luas atas ketertiban dan sarana umum yang bisa dipakai bersama.',k:'Menaati hukum, menjaga fasilitas publik, dan menyampaikan aspirasi secara damai serta bertanggung jawab.',u:'Pasal 170 KUHP dan UU No. 22 Tahun 2009'},
+{n:'Vandalisme taman',f:'Membuang sampah sembarangan dan merusak tanaman di sekitar taman kota.',h:'Hak warga atas kenyamanan ruang publik (kesimpulan modul dari teks).',k:'Menjaga kebersihan dan keindahan lingkungan serta aset publik.',u:'Menurut buku: Pasal 170 KUHP dan UU No. 22 Tahun 2009 (lihat catatan verifikasi)'},
+{n:'Prosedur pemilu',f:'Tidak terdaftar dalam DPT dan tidak mendapat kartu suara saat pemilu.',h:'Hak warga negara berpartisipasi dalam proses demokrasi (hak pilih).',k:'Penyelenggara wajib menjalankan prosedur pemilu dengan benar (kesimpulan modul dari teks).',u:'UU No. 7 Tahun 2023 (penetapan Perppu No. 1 Tahun 2022 atas UU No. 7 Tahun 2017)'}
+],d=>'<p><b>Fakta:</b> '+d.f+'</p><button class="btn alt" onclick="tg(\'ka\',this)">Lihat analisis</button><div class="reveal" id="ka"><p><b>Hak yang dilanggar:</b> '+d.h+'</p><p><b>Kewajiban yang diingkari:</b> '+d.k+'</p><p><b>Aturan terkait:</b> '+d.u+'</p><p><b>Refleksi:</b> apa yang bisa kamu lakukan agar kasus ini tidak terulang?</p></div>');
+tabs('#ctabs','#cpanel',[
+{n:'Keluarga',t:['Mentaati nasihat orang tua','Berperilaku baik kepada semua anggota keluarga','Mengerjakan tugas rumah dengan penuh tanggung jawab']},
+{n:'Sekolah',t:['Mengerjakan tugas sekolah dengan baik','Mematuhi aturan hukum yang berlaku','Mematuhi aturan sekolah']},
+{n:'Masyarakat',t:['Membina kerukunan antartetangga','Mematuhi aturan hukum yang berlaku','Menggunakan fasilitas umum dengan baik','Membayar pajak tepat waktu']}
+],d=>'<h3>Lingkungan '+d.n.toLowerCase()+'</h3><ul>'+d.t.map(x=>'<li>'+x+'</li>').join('')+'</ul>');
+let sc=0,tot=0;
+function quiz(id,qs,count){const c=$(id);qs.forEach((q,qi)=>{const w=document.createElement('div');w.style.margin='14px 0';w.innerHTML='<p><span class="tag '+q.l+'">'+q.l.toUpperCase()+'</span><b>'+q.q+'</b></p>';const fb=document.createElement('div');fb.className='fb';q.o.forEach((o,oi)=>{const b=document.createElement('button');b.className='opt';b.textContent=o;b.onclick=()=>{if(w.dataset.done)return;w.dataset.done=1;const ok=oi==q.a;b.classList.add(ok?'ok':'no');if(!ok)w.querySelectorAll('.opt')[q.a].classList.add('ok');fb.textContent=(ok?'Tepat. ':'Belum tepat. ')+q.e;if(count){tot++;if(ok)sc++;if(tot==qs.length&&id=='#q-b')$('#score').textContent='Skormu: '+sc+' dari '+tot}};w.appendChild(b)});w.appendChild(fb);c.appendChild(w)})}
+quiz('#q-a',[
+{l:'lots',q:'Menurut Pasal 31 ayat 2, siapa yang wajib membiayai pendidikan dasar?',o:['Orang tua sepenuhnya','Pemerintah','Sekolah swasta','Teman sebaya'],a:1,e:'Setiap warga negara wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya.'},
+{l:'mots',q:'Mana yang termasuk pengingkaran kewajiban?',o:['Mengikuti kerja bakti','Tidak membayar pajak','Menyampaikan pendapat dengan damai','Mendaftar sekolah'],a:1,e:'Tidak membayar pajak termasuk tidak taat hukum dan tidak berkontribusi dalam pembangunan.'}
+],false);
+quiz('#q-ad',[
+{l:'hots',q:'"Hak dan kewajiban bisa dipilih salah satu saja: yang penting hak kita terpenuhi." Setuju atau tidak?',o:['Setuju','Tidak setuju'],a:1,e:'Hak dan kewajiban adalah dua hal yang tidak dapat dipisahkan; kewajiban adalah konsekuensi dari hak.'},
+{l:'hots',q:'Golput dapat dipandang sebagai pelanggaran terhadap hak pilih, karena warga memilih tidak menggunakan hak yang telah diberikan. Pernyataan ini sesuai teks buku?',o:['Sesuai','Tidak sesuai'],a:0,e:'Buku menyebut golput bisa dilihat sebagai bentuk pelanggaran terhadap hak pilih. Diskusikan: apa saja penyebabnya dan apa upaya menguranginya?'}
+],false);
+quiz('#q-b',[
+{l:'lots',q:'Hak warga negara menurut modul ini adalah...',o:['Hak dasar yang melekat sejak lahir dan disahkan undang-undang','Pemberian sementara dari sekolah','Aturan yang hanya berlaku bagi pejabat','Kewajiban yang tertunda'],a:0,e:'Hak dasar untuk melindungi harkat dan martabat manusia.'},
+{l:'mots',q:'Pemotor memarkir kendaraan di guiding block. Hak siapa yang dilanggar?',o:['Penyandang disabilitas tuna netra','Pemilik toko','Juru parkir','Pengendara mobil'],a:0,e:'Penyandang disabilitas kehilangan hak memakai fasilitas umum (UU No. 8 Tahun 2016).'},
+{l:'mots',q:'Anak putus sekolah lalu bekerja membantu keluarga. Hak apa yang terancam?',o:['Hak atas pendidikan dan masa kanak-kanak yang layak','Hak memilih dalam pemilu','Hak membentuk keluarga','Hak membayar pajak'],a:0,e:'Kondisi ini mencerminkan kegagalan negara dan masyarakat melindungi anak.'},
+{l:'hots',q:'Mana langkah pencegahan yang paling tepat dimulai dari lingkungan terkecil?',o:['Menunggu aturan baru dari pusat','Membiasakan taat nasihat orang tua dan tanggung jawab di rumah','Mengabaikan aturan kecil','Menyerahkan semuanya ke pemerintah'],a:1,e:'Menurut buku, pencegahan dimulai dari keluarga, lalu sekolah, lalu masyarakat.'}
+],true);
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
+</script></body></html>
